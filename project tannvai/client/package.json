@@ -4,10 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
-  },
+  "build": "cd server && npm install && npm run build && cd ../client && npm install && npm run build"
+},
   "dependencies": {
     "clsx": "^2.1.1",
     "leaflet": "^1.9.4",
